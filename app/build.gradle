@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'io.gitlab.arturbosch.detekt'
 }
 
 android {
@@ -43,4 +44,15 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
+
+// @see https://detekt.dev/gradle.html#kotlin-dsl-3
+detekt {
+    // The directories where detekt looks for source files.
+    // Defaults to `files("src/main/java", "src/test/java", "src/main/kotlin", "src/test/kotlin")`.
+    source = files("src/main/java", "src/main/kotlin")
+
+    // Define the detekt configuration(s) you want to use.
+    // Defaults to the default detekt configuration.
+    config = files("${project.rootDir}/config/detekt/detekt.yml")
 }

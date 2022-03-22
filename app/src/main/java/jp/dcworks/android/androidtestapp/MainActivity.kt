@@ -1,8 +1,8 @@
-package jp.dcworks.android.android_test_app
+package jp.dcworks.android.androidtestapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import jp.dcworks.android.android_test_app.ui.main.MainFragment
+import jp.dcworks.android.androidtestapp.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
 

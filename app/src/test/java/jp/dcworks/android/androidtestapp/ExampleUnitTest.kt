@@ -1,4 +1,4 @@
-package jp.dcworks.android.android_test_app
+package jp.dcworks.android.androidtestapp
 
 import org.junit.Test
 
