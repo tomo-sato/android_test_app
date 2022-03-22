@@ -23,8 +23,8 @@ jobs:
 #    - name: Run ESLint
 #      run: yarn lint
 
-    - name: Run Jest
-      run: yarn test
+#    - name: Run Jest
+#      run: yarn test
 
     - name: Run Danger
       run: yarn danger:ci
