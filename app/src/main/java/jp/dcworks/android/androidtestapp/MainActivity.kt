@@ -15,6 +15,6 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.container, MainFragment.newInstance())
                 .commitNow()
         }
-        Log.d("test", "hogehoge")
+        Log.d("test", "hogehogehogehoge")
     }
 }
