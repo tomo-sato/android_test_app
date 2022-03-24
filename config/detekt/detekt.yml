@@ -1,11 +1,11 @@
 build:
-  maxIssues: 0
+  maxIssues: 1000
   excludeCorrectable: false
   weights:
-  # complexity: 2
-  # LongParameterList: 1
-  # style: 1
-  # comments: 1
+    complexity: 0
+    LongParameterList: 0
+    style: 0
+    comments: 0
 
 config:
   validation: true
