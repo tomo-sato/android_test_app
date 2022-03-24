@@ -1,7 +1,7 @@
 github.dismiss_out_of_range_messages
 
 checkstyle_format.base_path = Dir.pwd
-report_files = Dir.glob("reports/detekt/detekt.xml")
+report_files = Dir.glob("app/build/reports/detekt/detekt.xml")
 message('test1')
 for report_file in report_files do
     message('test2')
