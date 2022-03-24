@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         Log.d("test", "hogehogehogehoge")
     }
 
-    private fun emptyMethod(): String {
-        return ""
+    private fun emptyMethod() {
+        // TODO
     }
 }
