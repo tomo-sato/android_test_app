@@ -1,7 +1,0 @@
-{
-  "scripts": {
-    "lint": "eslint --ext .js ./src",
-    "test": "jest",
-    "danger": "danger ci"
-  }
-}
