@@ -1,32 +1,20 @@
-name: actions
-on: [pull_request]
+name: CI Pull Requests
+on:
+  pull_request:
+    types: [opened, reopened, ready_for_review, synchronize]
 
 jobs:
-  actions-ci:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-
-    - name: Prepare Node Env
-      uses: actions/setup-node@v1
-      with:
-        node-version: '12.x'
-
-    - name: Install yarn
-      run: npm i -g yarn
-
-    - name: Install Dependencies
-      run: yarn
-
-#    - name: Run ESLint
-#      run: yarn lint
-
-#    - name: Run Jest
-#      run: yarn test
-
-    - name: Run Danger
-      run: yarn danger:ci
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: yarn install
+        run: yarn install
+      - name: Danger
+        run: yarn danger ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
