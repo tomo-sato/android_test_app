@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
                 .commitNow()
         }
         Log.d("test", "hogehogehogehoge")
+        EmptyMethod2()
     }
 
     private fun emptyMethod() {
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         Log.d("test", "hoge")
     }
 
-    private fun emptyMethod2(): String {
+    private fun EmptyMethod2(): String {
         // TODO
         Log.d("test", "hoge")
         return ""
