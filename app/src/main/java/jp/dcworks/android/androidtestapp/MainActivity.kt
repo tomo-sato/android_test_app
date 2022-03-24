@@ -22,4 +22,10 @@ class MainActivity : AppCompatActivity() {
         // TODO
         Log.d("test", "hoge")
     }
+
+    private fun emptyMethod2(): String {
+        // TODO
+        Log.d("test", "hoge")
+        return ""
+    }
 }
