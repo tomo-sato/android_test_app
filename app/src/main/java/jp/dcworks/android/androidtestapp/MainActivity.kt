@@ -20,5 +20,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun emptyMethod() {
         // TODO
+        Log.d("test", "hoge")
     }
 }
