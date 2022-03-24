@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "lint": "eslint --ext .js ./src",
+    "test": "jest",
+    "danger": "danger ci"
+  },
+  "devDependencies": {
+    "danger": "^11.0.2"
+  }
+}

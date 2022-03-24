@@ -2,6 +2,7 @@ package jp.dcworks.android.androidtestapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import jp.dcworks.android.androidtestapp.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
@@ -14,5 +15,6 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.container, MainFragment.newInstance())
                 .commitNow()
         }
+        Log.d("test", "hogehogehogehoge")
     }
 }
